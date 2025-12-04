@@ -1,0 +1,166 @@
+@import url(cor.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*PRINCIPAL*/
+body {
+    background-color: var(--cor-fundo-body);
+}
+
+main { 
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;    
+    text-align: center;
+    text-shadow: 4px 3px 8px rgb(255, 255, 255);
+    font-family: "Bebas Neue", Arial;
+    font-size: 3.2em;
+    letter-spacing: 2px;
+    color: var(--cor-cabecalho-inicial);
+}
+
+
+/*PROJETOS*/
+/*CARD LANCHONETE*/
+.card-lanchonete {
+    display: inline-table;
+    border-radius: 15px;
+    width: 480px;
+    height: 495px;
+    margin: 20px;
+    background-color: var(--cor-card);
+    color: var(--cor-letras);
+}
+
+.card-lanchonete > h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 20px;
+    font-family: "Bebas Neue", Arial;
+    letter-spacing: 3px;
+    
+}
+
+.card-lanchonete > p {
+    text-align: left;
+    padding: 5px 8px;
+    letter-spacing: 2px;
+    line-height: 27px;
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    
+}
+
+/*CARD CALCULADORA*/
+.card-imc {
+    display: inline-table;
+    border-radius: 15px;
+    width: 480px;
+    height: 495px;
+    margin: 20px;
+    background-color: var(--cor-card);
+    color: var(--cor-letras);
+}
+
+.card-imc > h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 20px;
+    font-family: "Bebas Neue", Arial;
+    letter-spacing: 3px;
+    
+}
+
+.card-imc > p {
+    text-align: left;
+    padding: 5px 8px;
+    letter-spacing: 2px;
+    line-height: 27px;
+    font-size: 18px;
+    margin: 5px 10px;
+    
+}
+
+/*CARD RECEITAS*/
+.card-receitas {
+    display: inline-table;
+    border-radius: 15px;
+    width: 480px;
+    height: 500px;
+    margin: 20px;
+    background-color: var(--cor-card);
+    color: var(--cor-letras);
+}
+
+.card-receitas > h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 25px;
+    font-family: "Bebas Neue", Arial;
+    letter-spacing: 3px;
+    
+}
+
+.card-receitas > p {
+    text-align: left;
+    padding: 5px 8px;
+    letter-spacing: 2px;
+    line-height: 27px;
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.botao {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 30px;
+    margin: 10px;
+    font-family: "Bebas Neue";
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    color: var(--cor-botao-cards);
+    background-color: var(--cor-fundo-botaop);
+}/*botao projetos*/
+
+/* MIDIA QUERY */
+/* celular */
+@media(min-width: 360px) and (max-width: 414px) {
+    /* SISTEMA LANCHONETE */
+    .card-lanchonete {
+        max-width: 359px;
+        height: 450px;        
+    }
+
+    .card-lanchonete p {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    /* CALCULADORA */
+    .card-imc {
+        max-width: 359px;
+        height: 550px;
+    }
+
+
+    /* SITE RECEITAS */
+    .card-receitas {
+        max-width: 359px;
+        height: 550px;
+    }
+
+    .card-receitas p {
+        margin-bottom: 10px;
+    }
+}

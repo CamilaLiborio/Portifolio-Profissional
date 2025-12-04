@@ -1,0 +1,68 @@
+@import url(cor.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*PRINCIPAL*/
+body {
+    background-color: var(--cor-fundo-body);
+}
+
+main { 
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;    
+    text-align: center;
+    text-shadow: 4px 3px 8px rgb(255, 255, 255);
+    font-family: "Bebas Neue", Arial;
+    font-size: 3.2em;
+    letter-spacing: 2px;
+    color: var(--cor-cabecalho-inicial);
+}
+
+
+/*CARD FOTO*/
+.sobremim-foto {
+    display: inline-block;
+    border-radius: 15px;
+    width: 450px;
+    height: 550px;
+    align-items: center;
+}
+
+.sobremim-foto > img {
+    width: 400px; 
+    border-radius: 10px;
+    border: 10px solid var(--cor-borda-foto);
+}
+
+/*SOBRE MIM*/
+.sobremim {
+    display: inline-block;
+}
+
+.sobremim p {
+    width: 660px;
+    height: 600px;
+    text-align: left; 
+    font-size: 1.35em;
+    line-height: 1.3;
+    padding: 20px;
+    color: var(--cor-letras-p); 
+}
+
+
+/* MIDIA QUERY */
+/* celular */
+@media(min-width: 360px) and (max-width: 414px) {
+    .sobremim-foto {
+        max-width: 394px;
+    }
+
+    .sobremim p {
+        max-width: 394px;
+    }
+}

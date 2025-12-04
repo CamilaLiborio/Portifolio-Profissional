@@ -1,0 +1,80 @@
+@import url(cor.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*PRINCIPAL*/
+body {
+    background-color: var(--cor-fundo-body);
+}
+
+main { 
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+main h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;    
+    text-align: center;
+    text-shadow: 4px 3px 8px rgb(255, 255, 255);
+    font-family: "Bebas Neue", Arial;
+    font-size: 3.2em;
+    letter-spacing: 2px;
+    color: var(--cor-cabecalho-inicial);
+}
+
+/*CONTATO*/
+/*texto do contato*/
+.texto-contato {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-family: "Mont Serrat", Arial;
+    letter-spacing: 3px;
+    color: var(--cor-letras-p);
+}
+
+/*icones*/
+.infos {
+    margin: 30px 20px;
+    margin-bottom: 80px;
+}
+
+.infos a {
+    padding: 10px;
+}
+
+/*div do curriculo*/
+.div-curriculo {
+    margin-top: 45px;
+}
+
+/*botão do currículo (div, letra)*/
+.curriculo {
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-family: "Mont Serrat", Arial;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    background-color: var(--cor-botao-cabecalho);
+    color: white;
+}
+
+/*botão do curículo(cor movimentação)*/
+.div-curriculo a:hover{   
+    background-color: #4ea9ffc0;
+}
+
+/* MIDIA QUERY */
+/* celular */
+@media(min-width: 360px) and (max-width: 414px) {
+    .curriculo {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .texto-contato {
+        max-width: 397px;
+    }
+}

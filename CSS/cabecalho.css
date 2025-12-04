@@ -28,7 +28,6 @@ header h1{
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.582);
 }
 
-
 /*titulo bem vindo*/
 header h2 {
     text-align: center;
@@ -40,14 +39,12 @@ header h2 {
     color: var(--cor-letras);
 }
 
-
 /*cabacalho*/
 nav {
     margin-top: 50px;
     margin-bottom: 70px;
     
 }
-
 
 /*botao cabacalho*/
 nav a {
@@ -86,4 +83,10 @@ footer {
 
 .direito {
     letter-spacing: 1px;
+}
+
+/* MIDIA QUERY */
+/* celular */
+@media(min-width: 360px) and (max-width: 414px) {
+    
 }

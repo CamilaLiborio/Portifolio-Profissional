@@ -1,0 +1,134 @@
+@import url(cor.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*PRINCIPAL*/
+body {
+    background-color: var(--cor-fundo-body);
+}
+
+main { 
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;    
+    text-align: center;
+    text-shadow: 4px 3px 8px rgb(255, 255, 255);
+    font-family: "Bebas Neue", Arial;
+    font-size: 3.2em;
+    letter-spacing: 2px;
+    color: var(--cor-cabecalho-inicial);
+}
+
+
+/*CURSOS*/
+.card-curso {
+    display: inline-block;
+    border-radius: 15px;
+    width: 430px;
+    height: 600px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.527);
+    background-color: var(--cor-card);
+    color: var(--cor-letras);
+}
+
+.card-curso > img {
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card-curso >h3 {
+    margin: 1px 10px;
+    font-size: 1.8em;
+    font-family: "Bebas Neue", Arial;
+    letter-spacing: 3px;
+}
+
+.card-curso >p {
+    text-align: left;
+    padding: 15px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--cor-letras);
+}
+
+/*CURSO CARD LOT*/
+.card-curso-lot {
+    display: inline-block;
+    border-radius: 15px;
+    width: 430px;
+    height: 600px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.527);
+    background-color: var(--cor-card);
+    color: var(--cor-letras);
+}
+
+.card-curso-lot > img {
+    width: 80%;
+    height: 200px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card-curso-lot >h3 {
+    margin: 0px 10px;
+    font-size: 1.7em;
+    font-family: "Bebas Neue", Arial;
+    letter-spacing: 3px;
+}
+
+.card-curso-lot >p {
+    text-align: left;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--cor-letras);
+}
+
+.certificado {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 30px;
+    margin: 10px;
+    font-family: "Bebas Neue", Arial;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    color: var(--cor-botao-cards);
+    background-color: var(--cor-fundo-botaop);
+}/*botao certificado*/
+
+/* MIDIA QUERY */
+/* celular */
+@media(min-width: 360px) and (max-width: 414px) {
+    .card-curso {
+        max-width: 360px;
+        height: 650px;
+        line-height: 23px;
+    }
+
+    .card-curso-lot {
+        max-width: 360px;
+        height: 670px;
+        line-height: 23px;
+        font-size: 17px;
+    }
+
+    .card-curso-lot h3 {
+        line-height: 35px;
+    }
+}
